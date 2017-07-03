@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html ng-app="Myapp">
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<script src="scripts/angular.min.js"></script>
+	<script src="scripts/angular-route.js"></script>
+	<script src="scripts/scripta.js"></script>
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+ 
+	<table style="font-family: Arial">
+		<tr>
+			<td colspan="2" class="header">
+				<h1>
+					Hello
+				</h1>
+			</td>
+		</tr>
+		<tr>
+			<td class="leftMenu">
+				<b> Click About Me or Knowledge link</b>
+				<a href="#/omeni">About me</a>
+				<a href="#/znanja">Knowledge</a>
+
+			</td>
+			<td class="mainContent">
+				<ng-view></ng-view>
+			</td>
+		</tr>
+	  
+		<tr>
+			<td colspan="2" class="footer">
+				<b>Hello again</b>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
